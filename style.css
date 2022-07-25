@@ -19,6 +19,7 @@
   */
   html, body {
     height: 100%;
+    max-width: 100%;
   }
   /*
     Typographic tweaks!
@@ -76,4 +77,159 @@
 
 body {
     font-family: 'Bai Jamjuree', sans-serif;
+    text-align: center;
+    font-size: 18px;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    color: var(--dark-blue);
+}
+
+img {
+    margin-inline: auto;
+}
+
+p {
+    color: var(--gray-blue)
+}
+
+.container {
+    padding-inline: 1.5em;
+}
+
+header{
+    margin-top: 5em;
+}
+
+header > img {
+    margin-bottom: 2.5em;
+}
+
+header > h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+}
+
+header > p {
+    padding-inline: 0.4em;
+    font-size: 1rem;
+    margin-bottom: 2.5em;
+}
+
+button {
+    display: inline-block;
+    border: none;
+    border-radius: 100px;
+    background-color: var(--cyan);
+    border-bottom: 3px solid var(--dark-blue);
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    width: 100%;
+    height: 3em;
+}
+
+button + button {
+    background-color: var(--light-blue);
+    margin-top: 1em;
+}
+
+article h2 {
+    margin-top: 7.5em;
+    font-size: 1.75rem;
+    padding-inline: 0.4em;
+    margin-bottom: 1em;
+}
+
+article p {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    padding-inline: 0.4em;
+}
+
+article img {
+    margin-bottom: 3.5em;
+}
+
+article h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.25em;
+}
+
+.features {
+    padding-inline: 2em;
+}
+
+.features h2 {
+    margin-bottom: 0.5em;
+}
+
+.features h2 + p {
+    margin-bottom: 5em;
+}
+
+.features p {
+    padding-inline: 1.5em;
+}
+
+.features img {
+    margin-bottom: 1.5em;
+}
+
+.features h3 + p {
+    margin-bottom: 5em;
+}
+
+.features > .other p:last-of-type {
+    margin-bottom: 10em;
+}
+
+.partners ul {
+    padding: 0;
+}
+
+.partners ul > li {
+    margin-bottom: 1em;;
+}
+
+.cta > button:last-of-type {
+    margin-bottom: 10em;
+}
+
+footer {
+    padding-top: 1.5em;
+    background-color: gainsboro;
+    padding-bottom: 2em;
+}
+
+footer img {
+    margin: 1.5em auto;
+    padding-inline: 9em;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer ul:first-of-type>li {
+    margin-bottom: 1em;
+}
+
+footer ul:first-of-type>li:last-of-type {
+    margin-bottom: 2.5em;
+}
+
+.social img {
+    margin-inline: none;
+}
+
+.social ul,.social li,.social img{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.social li + li {
+    margin-left: 1.5em;
 }
