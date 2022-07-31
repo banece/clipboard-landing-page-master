@@ -27,14 +27,15 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- Grid
 
 ### What I learned
 
-
+Changing .svg color on hover.
 
 ### Continued development
 
-
+Improving responsive designs.
 
 ### Useful resources
 
