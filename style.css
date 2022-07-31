@@ -79,6 +79,11 @@ body {
     font-family: 'Bai Jamjuree', sans-serif;
     text-align: center;
     font-size: 18px;
+
+    background-image: url(/images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
 }
 
 h1, h2, h3 {
@@ -128,6 +133,12 @@ button {
     letter-spacing: 1px;
     width: 100%;
     height: 3em;
+    cursor: pointer;
+    max-width: 48em;
+}
+
+button:hover{
+  filter: brightness(115%);
 }
 
 button + button {
@@ -136,10 +147,13 @@ button + button {
 }
 
 article h2 {
-    margin-top: 7.5em;
     font-size: 1.75rem;
     padding-inline: 0.4em;
     margin-bottom: 1em;
+}
+
+.snippets h2 {
+  margin-top: 7.5em;
 }
 
 article p {
@@ -149,7 +163,7 @@ article p {
 }
 
 article img {
-    margin-bottom: 3.5em;
+    margin-bottom: 3.5rem;
 }
 
 article h3 {
@@ -157,12 +171,17 @@ article h3 {
     margin-bottom: 0.25em;
 }
 
+.clipboard h2 {
+  margin-top: 5em;
+}
+
 .features {
     padding-inline: 2em;
 }
 
 .features h2 {
-    margin-bottom: 0.5em;
+  margin-top: 5em; 
+  margin-bottom: 0.5em;
 }
 
 .features h2 + p {
@@ -193,19 +212,23 @@ article h3 {
     margin-bottom: 1em;;
 }
 
+.cta h2 {
+  margin-top: 7.5em;
+}
+
 .cta > button:last-of-type {
     margin-bottom: 10em;
 }
 
 footer {
     padding-top: 1.5em;
-    background-color: gainsboro;
+    background-color: rgba(220, 220, 220, 0.4);
     padding-bottom: 2em;
 }
 
 footer img {
     margin: 1.5em auto;
-    padding-inline: 9em;
+    width: 3.5em;
 }
 
 footer ul {
@@ -216,12 +239,21 @@ footer ul:first-of-type>li {
     margin-bottom: 1em;
 }
 
+footer a:hover {
+  color: var(--cyan);
+}
+
 footer ul:first-of-type>li:last-of-type {
     margin-bottom: 2.5em;
 }
 
 .social img {
-    margin-inline: none;
+  width: 1.5em;
+  margin-inline: none;
+}
+
+.social img:hover {
+  filter: invert(60%) sepia(44%) saturate(638%) hue-rotate(122deg) brightness(92%) contrast(94%);
 }
 
 .social ul,.social li,.social img{
@@ -231,5 +263,146 @@ footer ul:first-of-type>li:last-of-type {
 }
 
 .social li + li {
-    margin-left: 1.5em;
+    margin-left: 2em;
+}
+
+@media screen and (min-width: 1000px) {
+  header > h1 {
+    font-size: 2.5rem;
+  }
+
+  button {
+    max-width: 12.5em;
+  }
+
+  button + button {
+    margin-left: 1em;
+  }
+
+  header > p, article p {
+    font-size: 1.2rem;
+    margin-inline: auto;
+    max-width: 60ch;
+    padding-inline: 0;
+  }
+
+  article h2 {
+    font-size: 2.2rem;
+  }
+
+  article h2+p {
+    font-size: 1.15rem;
+  }
+
+  article p {
+    font-size: 1rem;
+  }
+
+  .snippets { 
+    display: grid;
+    grid-template-areas: "a a"
+                         "b c";
+                         row-gap: 2em;
+  }
+
+  .snippets > .main {
+    grid-area: a;
+    margin-inline: auto;
+  }
+
+  .snippets img {
+    grid-area: b;
+    margin-left: -5em;
+  }
+
+  .snippets .other {
+    grid-area: c;
+    text-align: left;
+    align-self: center;
+    justify-self: left;
+    min-width: 50%;
+    margin-top: -5em;
+    margin-left: -15em;
+  }
+
+  .snippets > .other p {
+    max-width: 35ch;
+  }
+
+  .clipboard h2 {
+    margin-top: 2.5em;
+  }
+
+  .features h2 {
+    margin-top: 2.5em;
+  }
+
+  .features .other {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    align-items: baseline; 
+    column-gap: 1em;
+  }
+
+  .features p:first-of-type {
+    padding-inline: 0;
+    max-width: none;
+  }
+
+  .features p {
+    padding-inline: 0;
+    max-width: 32ch;
+  }
+
+  .features > .other p:last-of-type {
+    margin-bottom: 7.5em;
+  }
+  
+  .partners ul {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+  }
+
+  .cta h2 {
+    margin-top: 2em;
+  }
+
+  footer {
+    display: grid;
+    justify-content: normal;
+    align-items: center;
+    grid-template-areas: "a b c";
+  }
+
+  footer img {
+    grid-area: a;
+    margin: 0;
+    margin-inline: auto;
+  }
+
+  footer ul:first-of-type {
+    grid-area: b;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    column-gap: 2.5em;
+    max-height: 5em;
+  }
+
+  footer ul:first-of-type>li {
+    margin-bottom: 0.5em;
+  }
+
+  footer ul:first-of-type>li:last-of-type {
+    margin-bottom: 0em;
+  }
+
+  footer .social {
+    grid-area: c;
+  }
 }
