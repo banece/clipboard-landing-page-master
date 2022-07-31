@@ -18,7 +18,7 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
 ### Links
 
 - Solution URL: [github.com/banece/clipboard-landing-page-master](https://github.com/banece/clipboard-landing-page-master)
-- Live Site URL: []()
+- Live Site URL: [banece.github.io/clipboard-landing-page-master](https://banece.github.io/clipboard-landing-page-master/)
 
 ## My process
 
